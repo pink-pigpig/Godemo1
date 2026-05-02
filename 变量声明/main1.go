@@ -54,4 +54,15 @@ func main() {
 	//可以通过%T来获得输出的值是什么类型。
 	fmt.Printf("username: %v, username type: %T\n", username, username)
 
+	/*总结
+	单声明：var identifier type
+	批量声明：var identifier1, identifier2 type
+	第一种指定变量类型，如果没有初始化，则变量默认为零值。
+	var v_name v_type
+	v_name = value
+	第二种，根据值自行判定变量类型。
+	var v_name = value
+	第三种，如果变量已经使用 var 声明过了，再使用 := 声明变量，就产生编译错误，格式：
+	v_name := value
+	*/
 }
